@@ -1,0 +1,23 @@
+javascript
+<div class="container">
+            <div class="row text-center">
+                <div class="col">
+                    <h3>HAI...CEPET SEMBUH</h3>
+                    <button onclick="alert('SAMA SAMA:)')">IYA MAKASIH YA</button>
+                    <button onclick="pindahPindah(this)">
+                        
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <script>
+            function pindahPindah (tombol) {
+                let css = tombol.style;
+                let randomTop = Math.floor(Math.random()*75)+10;
+                let randomLeft = Math.floor(Math.random()*75)+10;
+                css.position = "absolute ";
+                css.top = `${randomTop}%`;
+                css.left = `${randomLeft}%`;
+            }
+        </script>
